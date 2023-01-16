@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://localhost:5000/posts'
+const url = 'https://memories-server-02ky.onrender.com/posts'
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost )
 export const updatePost = (id, updatedPost) => axios.put(`${url}/${id}`, updatedPost)
